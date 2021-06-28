@@ -1,0 +1,57 @@
+
+# A bad 'Hello World' script that still works:
+#by MopeyJo
+computer_exists = False
+world_probably_exists = True
+polite_conversation_checker = 1
+characters = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j" "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ".", "?", "-", "!"]
+
+class TxtClass:
+    def __init__(self, cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10, cha11, cha12):
+        self.cha1 = cha1
+        self.cha2 = cha2
+        self.cha3 = cha3
+        self.cha4 = cha4
+        self.cha5 = cha5
+        self.cha6 = cha6
+        self.cha7 = cha7
+        self.cha8 = cha8
+        self.cha9 = cha9
+        self.cha10 = cha10
+        self.cha11 = cha11
+        self.cha12 = cha12
+    
+    def finish(self):
+        tostring = self.cha1 + self.cha2 + self.cha3 + self.cha4 + self.cha5 + self.cha6 + self.cha7 + self.cha8 + self.cha9 + self.cha10 + self.cha11 + self.cha12
+        return tostring
+
+
+
+selection = str("enter text here")
+
+def chooser(str):
+    #q = ""
+    t = TxtClass(characters[8], characters[5], characters[11], characters[11], characters[14], characters [0], characters[22], characters[14], characters [17], characters[11], characters[4], characters[26])
+    q = t.finish()
+    str = str.replace(str, q)
+    return str
+
+def case_check_and_change(str):
+    str = str.replace("h", "H")
+    str = str.replace("w", "W")
+    str = str.replace(".", "!")
+    return str
+
+def hello_world():
+    #if computer doesn't exist; then how can it say hello?
+    computer_exists = True
+    if computer_exists != False:
+        i = 0
+        while world_probably_exists == True and i < polite_conversation_checker:
+            print(case_check_and_change(chooser(selection)))
+            i =+ 1
+    else:
+        print("error: nonexistent entities cannot say 'hello'") 
+
+hello_world()
+
